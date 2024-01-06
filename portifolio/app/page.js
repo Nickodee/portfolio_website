@@ -5,6 +5,8 @@ import { FaCamera } from "react-icons/fa";
 import '../public/styles/gobal.css';
 import CUSIP from '../images/cusip23.jpg';
 import Image from 'next/image';
+import { FaArrowRight } from "react-icons/fa6";
+
 
 
 
@@ -72,16 +74,6 @@ export default function Home() {
         <section id='projects' className='h-[100vh] text-center'>
           <div>
             <h1 className='mb-3 text-2xl font-bold'>Web Development Projects</h1>
-            {/* <div className='flex gap-5 mx-2 justify-center'>
-              <div className='min-w-[200px] border shadow-lg bg-white rounded h-[250px]'>
-                <div className='w-full h-[200px]'></div>
-                <div className='bg-black h-[50px] w-full'></div>
-              </div>
-              <div className='min-w-[200px] border shadow-lg bg-white rounded h-[250px]'>
-                <div className='w-full h-[200px]'></div>
-                <div className='bg-black h-[50px] w-full'></div>
-              </div>
-            </div> */}
             <div
               className="flex overflow-x-scroll pb-5 hide-scroll-bar"
             >
@@ -92,11 +84,14 @@ export default function Home() {
                   <div
                     className="w-[200px] flex flex-col border h-[250px] max-w-xs overflow-hidden rounded shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
                   >
-                    <div className='bg-white h-[20px] w-full'></div>
-                    <div className='h-[200px] w-full'>
-                      <Image src={CUSIP} alt="cusip" className="object-cover items-center bg-no-repeat"/>
+                    <div className='bg-white h-[20px] w-full text-[#2dabb1] flex items-center'>
+                      <Link className='flex justify-between w-full items-center text-[14px] px-2' href="www.cusip.com">CUSIP <span><FaArrowRight className="transition-transform transform hover:rotate-60" /></span></Link>
                     </div>
-                    <div className='bottom-0 right-0 left-0 h-[30px] w-full bg-white'></div>
+                    <div className='h-[200px] w-full'>
+                      <Image src={CUSIP} alt="cusip" className="object-cover items-center bg-no-repeat" />
+                    </div>
+                    <div className='h-[30px] w-full bg-white gap-2 flex'>
+                    </div>
                   </div>
                 </div>
                 <div className="inline-block px-3">
@@ -122,7 +117,7 @@ export default function Home() {
                     <div className='h-[220px] w-full'></div>
                     <div className='bottom-0 right-0 left-0 h-[30px] w-full bg-black'></div>
                   </div>
-                </div>               
+                </div>
               </div>
             </div>
           </div>
