@@ -44,8 +44,8 @@ export default function Home() {
           <div className="bg-white rounded-full h-28 w-28 -bottom-14 left-4 z-10 absolute">
             <button className="w-9 items-center justify-center flex h-9 rounded-full bg-gray-200 -right-1 bottom-2 z-20 absolute"><FaCamera /></button>
           </div>
-          <div className="-bottom-14 absolute left-40">
-            <h1 className="text-white text-2xl font-bold">Nicodemus Muholo</h1>
+          <div className="-bottom-16 sm:-bottom-14 absolute left-40">
+            <h1 className="text-white text-[15px] sm:text-2xl font-bold">Nicodemus Muholo</h1>
             <h3 className="text-[#ecd37b] text-[15px]">Full Stack Software Developer</h3>
           </div>
           {coverPhoto && (
